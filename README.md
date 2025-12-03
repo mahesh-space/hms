@@ -3,15 +3,28 @@
 [![NodeMCU](https://img.shields.io/badge/Platform-NodeMCU-blue.svg)](https://www.nodemcu.com/)
 [![Arduino](https://img.shields.io/badge/IDE-Arduino-00979D.svg)](https://www.arduino.cc/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Dashboard](https://img.shields.io/badge/Dashboard-Live-success.svg)](https://mahesh-space.github.io/hms/)
 
 > An IoT-based health monitoring system that tracks heart rate, blood oxygen saturation (SpO2), and body temperature in real-time using cloud platforms.
+
+## 🌐 Live Dashboard
+
+**[Medi-Guard Monitor - Real-time Patient Health Dashboard](https://mahesh-space.github.io/hms/)**
+
+Experience our custom-built web dashboard featuring:
+- 📊 Real-time health metrics visualization
+- 🎨 Modern, responsive UI design
+- 📱 Mobile-friendly interface
+- 🔔 Alert notifications for abnormal readings
+- 📈 Historical data charts
+- 🎯 Patient-centric design
 
 ## 👥 Project Team
 
 **Institution:** [Your College Name]  
 **Department:** B.Tech (Electronics & Communication / Computer Science)  
 **Year:** 3rd Year  
-**Academic Session:** 2024-2025
+**Academic Session:** 2025-2026
 
 ### Team Members:
 - **Mahesh Gurjar** - Team Lead & Hardware Integration
@@ -56,6 +69,7 @@ This project implements a real-time health monitoring system using IoT technolog
 - ✅ **Blood Oxygen Saturation (SpO2)** - Measures oxygen levels in blood (%)
 - ✅ **Body Temperature Monitoring** - Accurate temperature measurement with DS18B20
 - ✅ **Cloud Integration** - Dual platform support (ThingSpeak & Blynk)
+- ✅ **Custom Web Dashboard** - Professional UI with [Medi-Guard Monitor](https://mahesh-space.github.io/hms/)
 - ✅ **WiFi Connectivity** - Wireless data transmission via NodeMCU ESP8266
 - ✅ **Mobile App Support** - Monitor health data on smartphone via Blynk app
 - ✅ **Visual Indicators** - LED feedback for heartbeat detection and data transmission
@@ -104,6 +118,7 @@ This project implements a real-time health monitoring system using IoT technolog
 ### Cloud Platforms:
 - **ThingSpeak** - Data logging and visualization
 - **Blynk** - Mobile app monitoring and control
+- **Medi-Guard Monitor** - Custom web dashboard ([Live Demo](https://mahesh-space.github.io/hms/))
 
 ---
 
@@ -282,6 +297,24 @@ Heart Rate: 75.2 bpm  |  SpO2: 98 %  |  Body Temp: 36.8 °C
 
 ## 📊 Data Visualization
 
+### Medi-Guard Monitor Dashboard (Primary):
+**🌐 [Live Dashboard](https://mahesh-space.github.io/hms/)**
+
+Our custom-built web interface provides:
+- **Real-time Monitoring**: Live health metrics with smooth animations
+- **Patient Information**: Display patient details and status
+- **Visual Indicators**: Color-coded alerts for abnormal readings
+- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile
+- **Modern UI/UX**: Intuitive interface with glassmorphism design
+- **Data Visualization**: Interactive charts and graphs
+- **Alert System**: Visual and audio notifications for critical values
+- **Multi-parameter Display**: All vitals in one comprehensive view
+
+**Normal Ranges Displayed:**
+- Heart Rate: 60-100 BPM
+- SpO2: 95-100%
+- Body Temperature: 36.1-37.2°C
+
 ### ThingSpeak Dashboard:
 - Access your channel at: `https://thingspeak.com/channels/YOUR_CHANNEL_ID`
 - View real-time graphs for all three parameters
@@ -341,11 +374,12 @@ Heart Rate: 75.2 bpm  |  SpO2: 98 %  |  Body Temp: 36.8 °C
 ## 🔮 Future Enhancements
 
 ### Planned Features:
+- [x] Custom web dashboard (Medi-Guard Monitor)
 - [ ] ECG monitoring capability
 - [ ] GPS location tracking
 - [ ] Emergency alert system (SMS/Email)
 - [ ] Machine learning for anomaly detection
-- [ ] Multi-user support
+- [ ] Multi-user support with patient profiles
 - [ ] Historical data analysis dashboard
 - [ ] Voice alerts using speaker module
 - [ ] Battery level monitoring
@@ -353,6 +387,8 @@ Heart Rate: 75.2 bpm  |  SpO2: 98 %  |  Body Temp: 36.8 °C
 - [ ] OLED display for offline viewing
 - [ ] Integration with smartwatches
 - [ ] Telemedicine consultation feature
+- [ ] Doctor appointment scheduling
+- [ ] PDF report generation
 
 ### Hardware Upgrades:
 - [ ] PCB design for compact assembly
@@ -445,6 +481,7 @@ For questions, suggestions, or collaboration:
   Email: shivraj.singh@college.edu
 
 **Project Repository:** [GitHub Link]  
+**Live Dashboard:** https://mahesh-space.github.io/hms/  
 **Project Documentation:** [Documentation Link]
 
 ---
@@ -463,17 +500,21 @@ We would like to thank:
 ## 📊 Project Statistics
 
 - **Development Time:** 3 months
-- **Total Code Lines:** ~350 lines
+- **Total Code Lines:** ~350 lines (Arduino) + Custom Web Dashboard
 - **Sensors Used:** 2
-- **Cloud Platforms:** 2
+- **Cloud Platforms:** 2 + Custom Dashboard
+- **Dashboards:** 3 (ThingSpeak, Blynk, Medi-Guard Monitor)
 - **Accuracy:** ±2% (SpO2), ±0.5°C (Temperature), ±3 BPM (Heart Rate)
 - **Update Frequency:** Real-time (1 sec), Cloud (15 sec)
 - **Power Consumption:** ~150mA average
 - **Cost:** ≈ ₹2000-2500 (~$25-30 USD)
+- **Web Technologies:** HTML5, CSS3, JavaScript
 
 ---
 
 <div align="center">
+
+### 🌟 [Visit Our Live Dashboard](https://mahesh-space.github.io/hms/) 🌟
 
 **Made with ❤️ by 3rd Year B.Tech Students**
 
@@ -483,6 +524,6 @@ We would like to thank:
 
 ---
 
-**Last Updated:** December 2024  
+**Last Updated:** December 2025  
 **Version:** 1.0.0  
 **Status:** ✅ Active Development
