@@ -425,8 +425,34 @@
                 padding: 15px;
             }
             
-            .dashboard-grid {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+            }
+            
+            .brand-text h1 {
+                font-size: 20px;
+            }
+            
+            .dashboard-grid,
+            .patient-info,
+            .metrics-grid {
                 grid-template-columns: 1fr;
+            }
+            
+            .glass-card {
+                padding: 20px;
+            }
+            
+            .controls {
+                flex-direction: column;
+                width: 100%;
+            }
+            
+            .controls .btn {
+                width: 100%;
+                justify-content: center;
             }
             
             .vital-value {
@@ -437,11 +463,50 @@
                 font-size: 60px;
             }
             
-            .header {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 20px;
+            .data-table th,
+            .data-table td {
+                padding: 12px 10px;
             }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                font-size: 14px;
+            }
+            
+            .brand {
+                width: 100%;
+                justify-content: space-between;
+            }
+            
+            .status-badge {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .logo {
+                width: 44px;
+                height: 44px;
+            }
+            
+            .vital-value {
+                font-size: 32px;
+            }
+            
+            .risk-value {
+                font-size: 48px;
+            }
+            
+            .controls .btn {
+                font-size: 13px;
+                padding: 10px 18px;
+            }
+        }
+        
+        .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
         }
 
         /* Loading Animation */
@@ -674,21 +739,23 @@
         <h3 style="margin-bottom: 20px; font-weight: 600;">
             <i class="fas fa-history"></i> Recent Readings
         </h3>
-        <table class="data-table">
-            <thead>
-                <tr>
-                    <th>Time</th>
-                    <th>Heart Rate</th>
-                    <th>Temperature</th>
-                    <th>Oxygen</th>
-                    <th>Risk Index</th>
-                    <th>Status</th>
-                </tr>
-            </thead>
-            <tbody id="readingsTable">
-                <!-- Will be populated by JavaScript -->
-            </tbody>
-        </table>
+        <div class="table-responsive">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Heart Rate</th>
+                        <th>Temperature</th>
+                        <th>Oxygen</th>
+                        <th>Risk Index</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="readingsTable">
+                    <!-- Will be populated by JavaScript -->
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <!-- Footer -->
