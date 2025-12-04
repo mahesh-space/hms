@@ -1066,7 +1066,17 @@
         
         feeds.reverse().forEach(feed => {
             const bpm = feed.field1 || 75;
-            const temp = feed.field2 || 36.5;
+            
+            // Use the same temperature logic as the body temperature card.
+            // If the feed temperature is missing/0/invalid, fall back to the
+            // currently shown card temperature (or 36.5 as a safe default).
+            const cardTempText = document.getElementById('tempValue').textContent;
+            const cardTemp = parseFloat(cardTempText);
+            const rawTemp = parseFloat(feed.field2);
+            const temp = (!isNaN(rawTemp) && rawTemp > 30 && rawTemp < 45)
+                ? rawTemp
+                : (!isNaN(cardTemp) ? cardTemp : 36.5);
+            
             const bpmRisk = Math.abs(bpm - 75) * 1.5;
             const tempRisk = Math.abs(temp - 37) * 10;
             const risk = Math.min(Math.round(bpmRisk + tempRisk), 100);
@@ -1091,7 +1101,7 @@
             row.innerHTML = `
                 <td>${timeStr}</td>
                 <td>${Math.round(bpm)} <span class="${bpm < 60 || bpm > 100 ? 'danger' : 'safe'}">BPM</span></td>
-                <td>${parseFloat(temp).toFixed(1)} °C</td>
+                <td>${temp.toFixed(1)} °C</td>
                 <td>${Math.floor(Math.random() * 3) + 96}%</td>
                 <td>${risk}%</td>
                 <td><span class="${statusClass}">${status}</span></td>
