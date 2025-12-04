@@ -21,7 +21,7 @@ Experience our custom-built web dashboard featuring:
 
 ## 👥 Project Team
 
-**Institution:** [Your College Name]  
+**Institution:** NIELIT AJMER
 **Department:** B.Tech (Electronics & Communication / Computer Science)  
 **Year:** 3rd Year  
 **Academic Session:** 2025-2026
