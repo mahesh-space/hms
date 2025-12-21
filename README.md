@@ -27,10 +27,10 @@ Experience our custom-built web dashboard featuring:
 **Academic Session:** 2025-2026
 
 ### Team Members:
-- **Mahesh Gurjar** - Team Lead & Hardware Integration
-- **Priyanshu Bharti** - Software Development & Cloud Integration
-- **Priyanka Yadav** - Sensor Calibration & Testing
-- **Shivraj Singh** - Documentation & IoT Platform Configuration
+- **Mahesh Gurjar** - Team Lead
+- **Priyanshu Bharti** 
+- **Priyanka Yadav** 
+- **Shivraj Singh** 
 
 ---
 
